@@ -37,6 +37,7 @@ export default function Filter({ onDateFilter, defaultDate }: Props) {
             <PopoverContent className="w-auto p-0" align="start">
               <Calendar
                 mode="single"
+                disabled={{ after: new Date() }}
                 selected={date}
                 onSelect={(date) => {
                   if (date) {
